@@ -17,7 +17,7 @@ There are multiple reasons why we need to understand the underlying mechanism of
 - Justifiability.
 - Interpretability.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b878b0e-a2a1-431e-b822-8bfa38886592/Screenshot_2020-10-26_at_3.05.17_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b878b0e-a2a1-431e-b822-8bfa38886592/Screenshot_2020-10-26_at_3.05.17_PM.png)
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/AIX360_1.png)
 
  [**AI Explainability 360](http://aix360.mybluemix.net/)[**[https://aix360.mybluemix.net/](https://aix360.mybluemix.net/)**],** a comprehensive open source toolkit of state-of-the-art algorithms that support the interpretability and explainability of machine learning models. 
 
@@ -31,9 +31,9 @@ This Code Pattern will also demonstrate the use of ART(Adversarial Robustness 36
 
 **No single approach to explaining algorithms**
 
-Currently, AI explainability 360 toolkit provides eight state-of-the-art explainability algorithms that can add transparency throughout AI systems. Depending on the requirement and subjected to the problem statement you can choose them appropriately. The algorithms are explained in detail on this [link.]([https://aix360.mybluemix.net/](https://aix360.mybluemix.net/))
+Currently, AI explainability 360 toolkit provides eight state-of-the-art explainability algorithms that can add transparency throughout AI systems. Depending on the requirement and subjected to the problem statement you can choose them appropriately. The algorithms are explained in detail on this [link.](https://aix360.mybluemix.net/))
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cfa38993-2216-4419-8b7e-d0f934686ef3/aix360_2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cfa38993-2216-4419-8b7e-d0f934686ef3/aix360_2.png)
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/aix360_2.png)
 
 In this Code Pattern, we will demonstrate the working of the three explainability Algorithms:
 
@@ -44,7 +44,7 @@ In this Code Pattern, we will demonstrate the working of the three explainabilit
 
 Architecture: 
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ad5ed03-c0f5-4556-ad28-82fd28d0787a/Screenshot_2020-10-26_at_4.07.45_PM.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ad5ed03-c0f5-4556-ad28-82fd28d0787a/Screenshot_2020-10-26_at_4.07.45_PM.png)
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/AIX360_Arch.png)
 
 Flow:
 
