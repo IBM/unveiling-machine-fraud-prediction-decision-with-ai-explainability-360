@@ -12,18 +12,18 @@ After pondering upon these questions, you will agree that It’s not enough to m
 
 There are multiple reasons why we need to understand the underlying mechanism of the Machine learning Models -
 
-- Human Readability: Explainable AI gives the reasoning behind certain decisions, and that can both increase transparency and help offer better business understanding.
+- Human Readability.
 - Bias Mitigation.
 - Justifiability.
 - Interpretability.
 
 ![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/AIX360_1.png)
 
- [**AI Explainability 360](http://aix360.mybluemix.net/)[**[https://aix360.mybluemix.net/](https://aix360.mybluemix.net/)**],** a comprehensive open source toolkit of state-of-the-art algorithms that support the interpretability and explainability of machine learning models. 
+ [**AI Explainability 360](http://aix360.mybluemix.net/), a comprehensive open source toolkit of state-of-the-art algorithms that support the interpretability and explainability of machine learning models.** 
 
 This Code Pattern highlights the use of the AI explainability 360 toolkits to demystify the decisions taken by the machine learning model to gain better insights and explainability which not only help the policy-makers, data scientists to develop trusted explainable AI applications but also the general public for transparency and allowing them to gain insight into the machine’s decision-making process. Understanding behind the scenes is essential to fostering trust and confidence in AI systems.
 
-To demonstrate the use of the AI Explainability 360 Toolkit, we are using the existing Fraud Detection Code Pattern showcasing, explaining, and also guide the practitioner on choosing an appropriate explanation method or algorithm depending upon the type of customer(Data Scientist, General Public, SME, Policy Maker) that needs an explanation of the model. 
+To demonstrate the use of the AI Explainability 360 Toolkit, we are using the existing [Fraud Detection Code Pattern](https://developer.ibm.com/patterns/fraud-prediction-using-autoai/) showcasing, explaining, and also guide the practitioner on choosing an appropriate explanation method or algorithm depending upon the type of customer(Data Scientist, General Public, SME, Policy Maker) that needs an explanation of the model. 
 
 This Code Pattern will also demonstrate the use of ART(Adversarial Robustness 360 Toolkit) to defend and evaluate Machine Learning models and applications against the adversarial threats of Evasion, Poisoning, Extraction, and Inference.
 
@@ -58,7 +58,9 @@ Flow:
 
 * [IBM Watson Studio](https://www.ibm.com/cloud/watson-studio): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 
-* [IBM Auto AI](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-overview.html):The AutoAI graphical tool in Watson Studio automatically analyzes your data and generates candidate model pipelines customized for your predictive modeling problem.  
+* [IBM AI Explainability 360 ](https://www.ibm.com/blogs/research/2019/08/ai-explainability-360/): The AI Explainability 360 toolkit is an open-source library that supports interpretability and explainability of datasets and machine learning models. The AI Explainability 360 Python package includes a comprehensive set of algorithms that cover different dimensions of explanations along with proxy explainability metrics.
+
+* [IBM Adverserial Robustness ](https://github.com/Trusted-AI/adversarial-robustness-toolbox): Adversarial Robustness Toolbox (ART) is a Python library for Machine Learning Security. ART provides tools that enable developers and researchers to defend and evaluate Machine Learning models and applications against the adversarial threats of Evasion, Poisoning, Extraction, and Inference.
 
 * [IBM Cloud Object Storage](https://console.bluemix.net/catalog/services/cloud-object-storage): An IBM Cloud service that provides an unstructured cloud data store to build and deliver cost effective apps and services with high reliability and fast speed to market. This code pattern uses Cloud Object Storage.
 
@@ -75,14 +77,6 @@ Steps:
 1. [Create an account with IBM Cloud](#1-create-an-account-with-ibm-cloud)
 1. [Create a new Watson Studio project](#2-create-a-new-watson-studio-project)
 1. [Add Data](#3-add-data)
-1. [Add Asset as Auto AI](#4-add-asset-as-auto-ai)
-1. [Create and define experiment](#5-create-and-define-experiment)
-1. [Import the csv file](#6-import-the-csv-file)
-1. [Run experiment](#7-run-experiment)
-1. [Analyze results](#8-analyze-results)
-1. [Deploy to Cloud](#9-deploy-to-cloud)
-1. [Model testing](#10-model-testing)
-
 
 ## 1. Create an account with IBM Cloud
 
@@ -129,7 +123,7 @@ Follow the below steps to use Jupyter Notebook for building the model. This is t
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
-* Enter this Notebook URL: https://github.com/IBM/predict-fraud-using-auto-ai/blob/master/notebook/Fraud_Detect.ipynb
+* Enter this Notebook URL:[**Put the notebook**]()
 * Select the runtime (8 vCPU and 32GB RAM)
 * Click the `Create` button.
 
@@ -177,29 +171,20 @@ After we run the cells in the notebook which includes data ingestion, data analy
 
 Check the model accuracy and confusion matrix to identify precision and recall scores. We can observe that model has > 92% accuracy on test data and the Precision/Recall scores are also high.
 
-![](https://github.com/IBM/predict-fraud-using-auto-ai/blob/master/images/cf_matrix.png)
+![]()
 
 Feature importance as per the model is below. The model has highlighted some of the attributes which has high impact on the outcome. Features might or might not be fairly compared to access the impact on outcome.
 
-![](https://github.com/IBM/predict-fraud-using-auto-ai/blob/master/images/feat_imp.png)
+![]()
 
 We have used shapley values which is a very effective model evaluation technique. Shapley values calculate the importance of a feature by comparing what a model predicts with and without the feature. However, since the order in which a model sees features can affect its predictions, this is done in every possible order, so that the features are fairly compared.
 
-![](https://github.com/IBM/predict-fraud-using-auto-ai/blob/master/images/shap.png)
+![]()
 
 We can observe that attributes like Married, Applicant Income & Credit history available are having high impact on the outcome which is to detect fraud as per shapley values. 
 
-![](https://github.com/IBM/predict-fraud-using-auto-ai/blob/master/images/shap_ft_imp.png)
+![]()
 
-With this, we have come to the end of this code pattern where we can compare the ease of using AutoAI to build predictive models vs creating a new jupyter notebook to build and evaluate predictive models. `There's considerable reduction of time in building and deploying the models using AutoAI because it handles missing values, outliers, feature engineering & hyper parameters optimization on the fly and selects the best algorithm as per the dataset.` AI Model building process has been reduced from Days to Hours thanks to `AutoAI.` If you are a developer or a data scientist who wants to build the model quickly and deploy it for being production ready, then AutoAI is for you which will help in taking decisions faster and gives a detailed overview of the attribute relationships within the data. 
-
-## More to come :
-
-The integration of Auto AI and Watson Open Scale is currently in progress and will be updated at a later date.
-
-## Related Links :
-
-[Fraud Prediction using skewed data](https://github.com/IBM/xgboost-smote-detect-fraud)
 
 # Troubleshooting
 
