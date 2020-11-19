@@ -171,27 +171,31 @@ All the three notebooks have given detailed explanation of the Algorithms and de
 
 - In the notebook [`Fraud-AI_Protodash_&_CE.ipynb`](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/tree/main/Notebooks)
 
-#### Protodash Explainer
+### 1) Protodash Explainer
 `This gives the profile of the instances similar to each other who have no fraud risk to the loan office.`
 ![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/Protodash.png)
 
 
 - In the notebook [`Fraud-AI_Protodash_&_CE.ipynb`](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/tree/main/Notebooks)
 
-#### Contrastive Explanations Method (CEM) algorithm using AI Explainability 360 on Fraud Data
+### 2) Contrastive Explanations Method (CEM) algorithm using AI Explainability 360 on Fraud Data
 `The above results show that the customer should have 'less loan Amount', 'Loan_Term' for it to classified as No-Fraud-risk.`
 
 ![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/CEM.png)
 
 
 - In the notebook [`booleanCG_fraud.ipynb`](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/tree/main/Notebooks)
-#### Unveiling Fraud Detection AI Model for Data Scientist using Boolean Rule Column Generation explainer
+
+### 3) Unveiling Fraud Detection AI Model for Data Scientist using Boolean Rule Column Generation explainer
+`The results shows the rules identified by the model in the data to a data Scientist.`
 ![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/Boolean_.png)
 
 
 - In the notebook [`Fraud_ART_Robustness.ipynb.ipynb`](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/tree/main/Notebooks)
-#### Adversarial-Robustness-Toolbox for LightGBM. 
-This notebook show how to generates the adversarial training data using Adversarial-Robustness-Toolbox. This will prepare the model against adversarial attacks so it doesn't misclassify and is able to distinguish noise from the real data.
+
+### 4) Adversarial-Robustness-Toolbox for LightGBM. 
+`This notebook show how to generates the adversarial training data using Adversarial-Robustness-Toolbox. This will prepare the model against adversarial attacks so it doesn't misclassify and is able to distinguish noise from the real data.`
+
 ![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/ART.png)
 
 
