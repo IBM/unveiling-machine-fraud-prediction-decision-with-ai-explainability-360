@@ -167,23 +167,32 @@ There are several ways to execute the code cells in your notebook:
 
 ## 7. Analyze the results
 
-After we run the cells in the notebook which includes data ingestion, data analysis, splitting the data, building the model and generating feature importance, its time to review and analyze the performance. There could be so many other activities like handling missing values, outlier management, feature engineering and hyper parameters optimization which are omitted for demo purpose.
+All the three notebooks have given detailed explanation of the Algorithms and demonstrated their use on `Fraud-Data.`
 
-Check the model accuracy and confusion matrix to identify precision and recall scores. We can observe that model has > 92% accuracy on test data and the Precision/Recall scores are also high.
+- In the notebook [`Fraud-AI_Protodash_&_CE.ipynb`](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/tree/main/Notebooks)
 
-![]()
+#### Protodash Explainer
+`This gives the profile of the instances similar to each other who have no fraud risk to the loan office.`
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/Protodash.png)
 
-Feature importance as per the model is below. The model has highlighted some of the attributes which has high impact on the outcome. Features might or might not be fairly compared to access the impact on outcome.
 
-![]()
+- In the notebook [`Fraud-AI_Protodash_&_CE.ipynb`](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/tree/main/Notebooks)
 
-We have used shapley values which is a very effective model evaluation technique. Shapley values calculate the importance of a feature by comparing what a model predicts with and without the feature. However, since the order in which a model sees features can affect its predictions, this is done in every possible order, so that the features are fairly compared.
+#### Contrastive Explanations Method (CEM) algorithm using AI Explainability 360 on Fraud Data
+`The above results show that the customer should have 'less loan Amount', 'Loan_Term' for it to classified as No-Fraud-risk.`
 
-![]()
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/CEM.png)
 
-We can observe that attributes like Married, Applicant Income & Credit history available are having high impact on the outcome which is to detect fraud as per shapley values. 
 
-![]()
+- In the notebook [`booleanCG_fraud.ipynb`](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/tree/main/Notebooks)
+#### Unveiling Fraud Detection AI Model for Data Scientist using Boolean Rule Column Generation explainer
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/Boolean_.png)
+
+
+- In the notebook [`Fraud_ART_Robustness.ipynb.ipynb`](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/tree/main/Notebooks)
+#### Adversarial-Robustness-Toolbox for LightGBM. 
+This notebook show how to generates the adversarial training data using Adversarial-Robustness-Toolbox. This will prepare the model against adversarial attacks so it doesn't misclassify and is able to distinguish noise from the real data.
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/ART.png)
 
 
 # Troubleshooting
