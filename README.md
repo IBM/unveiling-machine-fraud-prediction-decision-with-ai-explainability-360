@@ -40,7 +40,7 @@ In this Code Pattern, we will demonstrate the working of the three explainabilit
 1. Contrastive Explanations Method (CEM) algorithm available in AI Explainability 360.
 2. AI Explainability 360—ProtoDash—works with an existing predictive model to show how the customer compares to others who have similar profiles and had similar repayment records to the model's prediction for the current customer, which helps to evaluate and predict the applicant’s risk. Based on the model’s prediction and the explanation for how it came to that recommendation, the Loan Officer can make a more informed decision.
 3. Generalized Linear Rule Model (GLRM) algorithm in the AI Explainability 360 Toolkit, which provides an enhanced level of explainability  to a Data Scientist if the model can be deployed or not.
-4. Robustness : 
+ 
 
 Architecture: 
 
@@ -105,8 +105,7 @@ Click on Assets and select Browse and add the csv file from your file system.
 
 # Steps using Jupyter Notebook
 
-Follow the below steps to use Jupyter Notebook for building the model. This is to compare the manual process of model building with the automated process using AutoAI.
-
+Follow the below steps to use Jupyter Notebook for building the model. 
 `Create an account with IBM Cloud and then create a project in Watson Studio. Add the data as an asset. These three steps are given above in detail.`
 
 4. [Create the notebook](#4-create-the-notebook)
@@ -116,6 +115,7 @@ Follow the below steps to use Jupyter Notebook for building the model. This is t
 
 
 ## 4. Create the notebook
+You will have to create `three notebooks`. Below, is the procedure to create one. Repeat these steps to create the other two.
 
 * Open [IBM Watson Studio](https://dataplatform.ibm.com).
 * Go to the project and click on Add 
@@ -123,7 +123,7 @@ Follow the below steps to use Jupyter Notebook for building the model. This is t
 * Select the `From URL` tab.
 * Enter a name for the notebook.
 * Optionally, enter a description for the notebook.
-* Enter this Notebook URL:[**Put the notebook**]()
+* Enter this [Notebook URL](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/Notebooks/Fraud-AI_Protodash_%26_CE.ipynb)
 * Select the runtime (8 vCPU and 32GB RAM)
 * Click the `Create` button.
 
