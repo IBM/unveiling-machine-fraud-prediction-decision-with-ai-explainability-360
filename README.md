@@ -43,7 +43,7 @@ In this Code Pattern, we will demonstrate the working of the three explainabilit
 
 Architecture: 
 
-![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/AIX360_Arch.png)
+![](https://github.com/IBM/unveiling-machine-fraud-prediction-decision-with-ai-explainability-360/blob/main/doc/source/images/Arch.png)
 
 Flow:
 
